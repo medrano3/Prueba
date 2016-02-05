@@ -1,4 +1,4 @@
-import java.util.Scanner;
+  import java.util.Scanner;
 public class Tarea1
 {
 	public static void main(String args []){
@@ -6,9 +6,9 @@ public class Tarea1
                 System.out.print("Ingrese el nombre del empleado");
                 String nombre= teclado.nextLine();
                 System.out.print("Ingrese Codigo de Empleado:");
-                short cod_citas= teclado.nextShort();
+                short cod_citas= teclado.nextShortgit();
                 System.out.print("Sexo 'F','M':");
-                String sexo=teclado.nextLine();
+                String sexo=teclado.next();
                 System.out.print("Ingrese Horas Trabajadas:");
                 int horas_trabajadas=teclado.nextInt();
                 System.out.print("Ingrese Horas Extras Trabajadas:");
@@ -17,7 +17,7 @@ public class Tarea1
                 double pago_por_horas=teclado.nextDouble();
                 double sueldo_diario=horas_trabajadas*pago_por_horas;
                 double sueldo_semanal=(sueldo_diario)*7;
-                long sueldo_mensual=((sueldo_semanal)*4);
+                long sueldo_mensual=sueldo_semanal*4;
                 double pagoHE=pago_por_horas*horasE_trabajadas;
                 double deducciones=(sueldo_mensual)*0.8;
                 float sueldo_anual=(sueldo_mensual)*12;
